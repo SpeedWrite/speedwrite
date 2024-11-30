@@ -8,6 +8,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import components.FileButtons
+import components.Header
 import components.TextInputField
 
 @Composable
@@ -16,6 +17,7 @@ fun App() {
 
     MaterialTheme {
         Column(modifier = Modifier.fillMaxSize().padding(16.dp)) {
+            Header()
             TextInputField(
                 text = text,
                 onTextChange = { text = it },
